@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar';
+import Hero from './components/hero';
+import Bookbuddy from './components/bookbuddy';
+import Learnit from './components/learnit';
+import Vidcrunch from './components/vidcrunch';
+import Products from './components/products';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <Navbar items = {["Home", "BookBuddy", "LearnIt", "VideoHelper", "About"]}/>
+    <Hero />
+    <Products />
+    <Bookbuddy />
+    <Learnit />
+    <Vidcrunch />
+  </div>
   );
 }
 
